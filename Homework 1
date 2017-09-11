@@ -1,0 +1,61 @@
+//Problem #1
+let myString = "Hello"
+var cost = 3.14
+let cnt: Int = 2
+var shouldWe: Bool = true
+let hex = 0xB
+let bin = 0b1010
+
+//Problem #2
+let value: Double = 5.5
+print("My value is \(value)")
+
+//Problem #3
+var Bees: [String] = ["Queen", "Worker", "Drone"]
+print(Bees[0])
+Bees.append("Honey")
+Bees += ["Are", "Us"]
+
+//Problem #4
+for item in Bees {
+	print(item)	
+}
+
+for (index, item) in Bees.enumerated() {
+    print("Item #\(index) is \(item)")
+}
+
+//Problem #5
+var Authors: Dictionary<String,Double> = ["Mark Twain": 8.9, "Nathaniel Hawthorne": 5.1, "John Steinbeck": 2.3, "C.S. Lewis": 9.9, "Jon Krakaur": 6.1]
+
+//Problem #6
+print(Authors["John Steinbeck"] ?? 0.0)
+Authors["Erik Larson"] = 9.2
+var Twain = Authors["Mark Twain"] ?? 0.0, Krakaur = Authors["Jon Krakaur"] ?? 0.0
+if (Twain > Krakaur) {
+	print("Mark Twain")
+} else {
+	print("Jon Krakaur")
+}
+
+//Problem #7
+for (Author, Score) in Authors {
+	print("\(Author): \(Score)")
+}
+
+//Problem #8
+for index in 1...10 {
+	print("\(index)")
+}
+
+//Problem #9
+for index in stride(from: 10, through: 1, by: -1) {
+	print("\(index)")
+}
+
+//Problem #10
+var x = 13, y = 5, answer = 0
+for _ in 1...y {
+	answer = answer + x
+}
+print("\(answer)")
